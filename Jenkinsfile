@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'mvn --version'
+                echo "${env.JENKINS_URL}"
             }
         }
     }
